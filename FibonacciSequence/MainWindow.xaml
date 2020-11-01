@@ -7,6 +7,32 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Button Content="Generuj" HorizontalAlignment="Left" Margin="611,35,0,0" VerticalAlignment="Top" Width="62" Height="28" Click="Button_Click"/>
+        <Label Content="Liczba wygenerowanych wartości ciągu Fibonnaciego&#xD;&#xA;" HorizontalAlignment="Left" Margin="86,10,0,0" VerticalAlignment="Top" Height="26" Width="293"/>
+        <TextBox x:Name="boxAmount" HorizontalAlignment="Left" Margin="86,45,0,0" Text="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" TextChanged="TextBox_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="86,217,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="121" Width="240" UseLayoutRounding="True" IsEnabled="False">
+            <TextBlock.OpacityMask>
+                <ImageBrush/>
+            </TextBlock.OpacityMask>
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+        <Label Content="Wygenerowane wartości:" HorizontalAlignment="Left" Margin="86,186,0,0" VerticalAlignment="Top" Height="26" Width="293"/>
+        <TextBlock x:Name="boxDebug" HorizontalAlignment="Left" Margin="25,394,-1,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="240" UseLayoutRounding="False" Padding="10,10,10,10" IsEnabled="False">
+            <TextBlock.OpacityMask>
+                <ImageBrush/>
+            </TextBlock.OpacityMask>
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
 
     </Grid>
 </Window>

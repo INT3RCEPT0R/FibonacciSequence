@@ -24,5 +24,19 @@ namespace FibonacciSequence
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            int ilosc = 0;
+            if (!Int32.TryParse(boxAmount.Text, out ilosc))
+            {
+                boxDebug.Text = "Wprowadz liczbę";
+            }
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
+        }
     }
 }
